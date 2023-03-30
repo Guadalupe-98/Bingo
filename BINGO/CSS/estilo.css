@@ -1,0 +1,88 @@
+
+body{
+
+    background-image: url(../img/FONDO.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    
+}
+
+h1{
+    font-family: fantasy;
+    margin: auto;
+    -webkit-text-stroke: 1px rgb(79, 3, 165);
+    font-size: 100px;
+    color: rgb(180, 142, 222);
+    
+}
+
+
+table,th,tr{
+    margin: 1px;
+    border:5px inset rgb(85, 15, 129);
+    background-color: rgb(191, 173, 211);
+    border-collapse: collapse;
+    padding: 25px;
+}
+
+
+.nothing{
+    background-color: darkslateblue;
+}
+
+
+div.flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+}
+
+
+.bola{
+    background-position: center;
+    background-image: url(../img/BOLA.png);
+    background-repeat: no-repeat;
+    background-size:200px 200px ;
+    height: 200px;
+    position: relative;
+}
+
+.bola p{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -130%);
+    font-family: fantasy;
+    font-size: 100px;
+    color: rgb(208, 174, 217);
+    -webkit-text-stroke: 1px rgb(79, 3, 165);
+
+
+}
+
+.start{
+    
+    border: 15px outset rgb(69, 18, 77);
+    margin: 20px auto;
+    background-color: rgb(114, 32, 126);
+    font-family: fantasy;
+    color: rgb(208, 174, 217);
+    -webkit-text-stroke: 1px rgb(79, 3, 165);
+    font-size: 30px;
+    
+    
+}
+
+.start:hover{
+    background-color: rgba(178, 100, 178, 0.619);
+    border: 20px outset rgba(188, 88, 188, 0.619);
+
+}
+
+.noHover{
+    pointer-events: none;
+}
+

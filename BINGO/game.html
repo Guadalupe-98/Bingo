@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bingo</title>
+    <link rel="stylesheet" href="CSS/estilo.css" />
+    <script src="JS/numeros.js"></script>
+  </head>
+  <body>
+
+    <div style="display: inline;">
+    <h1>BINGO</h1>
+    <button class="start" onclick="play();" id="btnPlay">PLAY</button>
+  
+    <button class="start" onclick="reiniciar();" id="btnReinicio"> REINICIAR</button>
+    </div>
+
+    <div class="flex">
+      <div class="contenedor1">
+        <br /><br /><br /><br /><br />
+        <table id="Cbingo1">
+          <tr>
+            <th class="nothing"></th>
+            <th onclick="marcaX(this);"></th>
+            <th onclick="marcaX(this);"></th>
+            <th class="nothing"></th>
+            <th onclick="marcaX(this);"></th>
+            <th class="nothing"></th>
+            <th onclick="marcaX(this);"></th>
+            <th onclick="marcaX(this);"></th>
+            <th class="nothing"></th>
+          </tr>
+
+          <tr>
+            <th onclick="marcaX(this);"></th>
+            <th class="nothing"></th>
+            <th onclick="marcaX(this);"></th>
+            <th onclick="marcaX(this);"></th>
+            <th class="nothing"></th>
+            <th onclick="marcaX(this);"></th>
+            <th onclick="marcaX(this);"></th>
+            <th class="nothing"></th>
+            <th onclick="marcaX(this);"></th>
+          </tr>
+
+          <tr>
+            <th class="nothing"></th>
+            <th class="nothing"></th>
+            <th onclick="marcaX(this);"></th>
+            <th class="nothing"></th>
+            <th onclick="marcaX(this);"></th>
+            <th onclick="marcaX(this);"></th>
+            <th class="nothing"></th>
+            <th onclick="marcaX(this);"></th>
+            <th onclick="marcaX(this);"></th>
+          </tr>
+        </table>
+        <br /><br /><br /><br /><br /><br />
+
+        <table id="Cbingo2">
+          <tr>
+            <th ></th>
+            <th class="nothing"></th>
+            <th></th>
+            <th></th>
+            <th class="nothing"></th>
+            <th></th>
+            <th class="nothing"></th>
+            <th class="nothing"></th>
+            <th></th>
+          </tr>
+
+          <tr>
+            <th class="nothing"></th>
+            <th></th>
+            <th class="nothing"></th>
+            <th></th>
+            <th></th>
+            <th class="nothing"></th>
+            <th></th>
+            <th></th>
+            <th class="nothing"></th>
+          </tr>
+
+          <tr>
+            <th class="nothing"></th>
+            <th></th>
+            <th></th>
+            <th class="nothing"></th>
+            <th></th>
+            <th></th>
+            <th class="nothing"></th>
+            <th></th>
+            <th></th>
+          </tr>
+        </table>
+      </div>
+      <br /><br /><br /><br />
+
+      <div class="contenedor2">
+       
+        <div class="bola" >
+          <p id="salio">0</p>
+        </div>
+
+        <button class="start" onclick="salio()" style="display: block;">TIRAR NUMERO</button>
+
+        <table class="Numeros" id="tablaFinal">
+          <tr>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+          </tr>
+
+          <tr>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+          </tr>
+
+          <tr>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+          </tr>
+
+          <tr>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+          </tr>
+
+          <tr>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+          </tr>
+
+          <tr>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+          </tr>
+
+          <tr>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+          </tr>
+
+          <tr>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+          </tr>
+
+          <tr>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+          </tr>
+
+          <tr>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+          </tr>
+
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
